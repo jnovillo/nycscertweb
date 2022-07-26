@@ -128,6 +128,17 @@
     // Q: How does this look when illustrated using encapsulation diagram
     
   }//end grow()
+  
+  public void set(int index, int value){
+
+    // check if index is not out of range. ex: large number like 2000 or negative numbers
+    if(index <= numberElements && index >= 0){
+      data[index] = value;
+    }else{
+      System.out.println("Out of range! Index is too large or negative, did not add element to list");
+    }
+    
+  }
         </code></pre>
         
     </div>
