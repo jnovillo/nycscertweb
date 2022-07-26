@@ -82,7 +82,7 @@
         Bob, es un test de collapse, fonia o no?
     </div>
     <div class="collapse" id="programmingTest2" data-bs-parent="#rightSide">
-        <pre class="line-numbers"><code class="language-java">public void add(int index, int value)
+        <pre class="line-numbers"><code class="language-java">  public void add(int index, int value)
   {
 
     // check if index is not out of range. ex: large number like 2000 or negative numbers
@@ -107,6 +107,27 @@
       System.out.println("Out of range! Index is too large or negative, did not add element to list");
     }
   }
+  
+  private void grow()
+  {
+    // create a new array with 5 extra spaces
+    int[] newData = new int[numberElements + 5];
+
+    // Q: How did you decide how much to increase capacity by? 
+    // Directions on GitHub ask to make the new array 5 units larger.
+    // Also, it is more efficient to add 5 elements or more than do it 1 by 1
+
+    // copy over all the elements from the old array to the new one
+    for (int i=0; i<data.length; i++){
+      newData[i] = data[i];
+    }
+
+    // point data to the new array
+    data = newData;
+    
+    // Q: How does this look when illustrated using encapsulation diagram
+    
+  }//end grow()
         </code></pre>
         
     </div>
