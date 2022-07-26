@@ -29,10 +29,10 @@
             <li><a href="https://github.com/hunter-teacher-cert/cohort-3-summer-work-jnovillo/tree/master/programming/3"
                    class="link-dark d-inline-flex text-decoration-none rounded">Conway's Game of Life</a>
             </li>
-            <li><a data-bs-toggle="collapse" data-bs-parent="#rightSide" href="#programmingTest"
+            <li><a data-bs-toggle="collapse" href="#programmingTest"
                    class="link-dark d-inline-flex text-decoration-none rounded">Test</a>
             </li>
-            <li><a data-bs-toggle="collapse" data-bs-parent="#rightSide" href="#programmingTest2"
+            <li><a data-bs-toggle="collapse" href="#programmingTest2"
                    class="link-dark d-inline-flex text-decoration-none rounded">Test2</a>
             </li>
           </ul>
@@ -76,10 +76,10 @@
   
   <div class="d-flex p-2" id="rightSide">
     hello 
-    <div class="collapse" id="programmingTest">
+    <div class="collapse" id="programmingTest" data-bs-parent="#rightSide">
         Bob, es un test de collapse, fonia o no?
     </div>
-    <div class="collapse" id="programmingTest2">
+    <div class="collapse" id="programmingTest2" data-bs-parent="#rightSide">
         Bob, si se fue el otro collapse??
     </div>
   </div>
